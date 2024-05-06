@@ -31,7 +31,7 @@ if (comercioOk.toUpperCase() === 'SI') {
     
     switch (seleccionPlan) {
         case '1':
-            console.log("Has seleccionado el Plan Básico. El valor es de $1000.");
+            console.log("Seleccionaste el Plan Básico. El valor es de $1000.");
             alert("Seleccionaste el Plan Básico. El valor es de $1000.");
             break;
         case '2':
@@ -40,11 +40,11 @@ if (comercioOk.toUpperCase() === 'SI') {
             break;
         case '3':
             console.log("Seleccionaste el Plan Premium. El valor es de $3000.");
-            alert("Has seleccionado el Plan Premium. El valor es de $3000.");
+            alert("Seleccionaste el Plan Premium. El valor es de $3000.");
             break;
         default:
             console.log("No has seleccionado una opción válida.");
-            alert("Seleccionaste el una opción válida.");
+            alert("No has seleccionado una opción válida.");
             break;
     }
 } else if (comercioOk.toUpperCase() === 'NO') {
