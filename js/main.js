@@ -88,16 +88,16 @@ if (comercioOk.toUpperCase() === 'SI') {
             tipoDeNegocioTexto = "Negocio Chico";
             break;
         default:
-            tipoDeNegocioTexto = "Opción no válida";
+            tipoDeNegocioTexto = "opcion invalida";
             alert(tipoDeNegocioTexto);
             console.log(tipoDeNegocioTexto);
             break;
     }
 
-    // Si la opción de negocio es válida, proceder con la siguiente pregunta
-    if (tipoDeNegocioTexto !== "Opción no válida") {
+    // Si la opción de negocio es valida, siguiente pregunta
+    if (tipoDeNegocioTexto !== "opcion invalida") {
         // Preguntar a qué actividad se dedica el negocio
-        let actividadNegocio = prompt("¿A qué actividad se dedica tu negocio?");
+        let actividadNegocio = prompt("¿A qué se dedica tu negocio?");
 
         // Preguntar el tipo de ayuda de marketing que necesita
         let tipoDeAyuda = prompt("¿Qué tipo de ayuda de marketing necesitas para tu negocio?\n1. Página web\n2. Ayuda con redes sociales\n3. Anuncios en Google Ads\n4. Anuncios en Facebook\n5. Consultoría en marketing\nSelecciona el tipo de ayuda:");
@@ -120,14 +120,14 @@ if (comercioOk.toUpperCase() === 'SI') {
                 tipoDeAyudaTexto = "Consultoría en marketing";
                 break;
             default:
-                tipoDeAyudaTexto = "Opción no válida";
+                tipoDeAyudaTexto = "opcion invalida";
                 alert(tipoDeAyudaTexto);
                 console.log(tipoDeAyudaTexto);
                 break;
         }
 
-        // Si la opción de ayuda de marketing es válida, proceder con más preguntas si es necesario
-        if (tipoDeAyudaTexto !== "Opción no válida") {
+        
+        if (tipoDeAyudaTexto !== "Opción inválida") {
             if (tipoDeAyudaTexto === "Página web") {
                 let tipoDePagina = prompt("¿Qué tipo de página web necesitas?\n1. Landing comercial ($1000)\n2. Sitio web común ($2000)\n3. Carrito de compras ($3000)\nSelecciona el tipo de página:");
 
@@ -143,8 +143,8 @@ if (comercioOk.toUpperCase() === 'SI') {
                         precioPagina = 3000;
                         break;
                     default:
-                        alert("Opción no válida");
-                        console.log("Opción no válida");
+                        alert("opcion invalida");
+                        console.log("opcion invalida");
                         precioPagina = 0;
                         break;
                 }
